@@ -1,0 +1,156 @@
+@import "global.scss";
+
+// topNav
+.top-nav{
+  background-color: $gray;
+  // background-color: red;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    a{
+      color: $white;
+      margin-right: 10px;
+       &:hover{
+        color:$lightGray;
+       }
+      svg{
+        width: 30px;
+        height: 30px;
+        fill: $white;
+        // change color inside with stroke
+        // stroke: white;
+        // stroke-width: 1.5px;
+        &:hover{
+        fill:$lightGray;
+      }
+      }
+     
+      
+    }
+  }
+}
+
+// navBar
+nav  {
+  background: white;
+  width: 100%;
+	min-height: 60px;
+  position: relative;
+}
+
+ 
+.nav-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-header {
+position: absolute;
+top: 5px;
+right:20px;
+z-index: 2;
+}
+.nav-toggle {
+  font-size: 1.6rem;
+  color: $gray ;
+  background: transparent;
+  border-color: transparent;
+
+  cursor: pointer;
+  margin-top: 24px;
+}
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+
+
+.logo {
+  width: 200px;
+}
+
+
+.links a {
+  font-size: 1rem;
+  text-transform: capitalize;
+
+  display: block;
+  padding: 0 1rem;
+
+  color: $lightGray;
+  border-top: 1px solid $black;
+}
+.links li{
+//  padding-left: 1.3rem;
+}
+
+
+.links li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: $gray;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+.links li:hover::after{
+  width: 100%;
+}
+
+.links-container {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  align-self: self-start;
+}
+
+.links li .active{
+  color:$mainGold
+}
+
+
+@media screen and (min-width: 800px) {
+//  body{
+//   background-color: blue;
+//  }
+  .nav-center {
+    width: 100%;
+    flex-direction: row;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    padding-top: 2.2rem;
+    height: auto !important;
+    width: auto !important;
+  }
+  .links a {
+  border-top: none;
+   font-size: 1.2rem;
+}
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0 ;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+.logo{
+  width: 240px;
+}
+
+}
+

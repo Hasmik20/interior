@@ -1,0 +1,100 @@
+@import 'global.scss';
+
+.contact-head{
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+     h3{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: $letterSpacing;
+      color:$lightGray
+    }
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .info{
+          position: relative;
+          margin-bottom: 10px;
+        }
+        .icon{
+          font-size: 34px;
+          // margin-right: 10px;
+        color:$mainGold;
+        position: absolute;
+        top:0;
+        left:-50px
+        }
+        span,a{
+          text-decoration: none;
+          font-size: 22px;
+          color:$mainGold;
+          display: inline-block;
+          cursor: pointer;
+        } }
+  }
+}
+
+.contact-container{
+  .container{
+    .form-container{
+       margin-bottom: 20px ;
+    h4{
+      color:$lightGray;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .inputs-container{
+      background: rgb(222, 222, 176);
+      margin: 0 auto;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .form-control{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // width: 100%;
+    }
+    label{
+    color:$lightGray;
+    margin: 10px 0;
+    }
+  input, textarea{
+    background: $bgColor;
+    font-size: 16px;
+    color:$lightGray;
+    border-radius:8px;
+    padding:16px;
+    border-color: transparent;
+  
+    &:focus{
+      outline: none;
+      box-shadow: none;
+      border: none;
+      border-color:$lightGray;;
+    }  }
+  .btn{
+    margin-left:20vw;
+    display: inline-block;
+    background: rgb(173, 173, 119);
+    color: $white;
+    font-size: 16px;
+    border-color: transparent;
+    margin-top: 1rem;
+    letter-spacing: $letterSpacing;
+    padding: 16px 22px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+     width: 50%;
+  &:active{
+      transform: scale(0.98);
+  } }
+    }
+  }}

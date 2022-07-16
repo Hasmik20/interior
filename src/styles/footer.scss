@@ -1,0 +1,54 @@
+@import 'global.scss';
+
+.footer-container{
+  background-color: $black;
+  .container{
+
+  color:$white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  padding: 20px;
+
+ .info-container h4{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+ }
+  .info{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    a{
+      text-decoration: none;
+      color: $lightGray;
+      &:hover{
+        color:$white;
+      } }
+    .social-logo{
+      font-size: 30px;
+      margin-left: 10px;
+    }
+  }
+  .logo-container{
+  display: none;
+}
+}}
+
+.copyRight{
+ background-color: $gray;
+ min-height: 60px;
+ color: $white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .footer-container{
+       .container{
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 20px;
+   .logo-container{
+    
+  display: block;
+} } }  
+}
