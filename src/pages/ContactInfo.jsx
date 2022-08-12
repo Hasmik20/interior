@@ -19,7 +19,7 @@ const ContactInfo = () => {
             </div>
             <div className='info'>
               <AiOutlineMail  className="icon"/>
-              <span><a href="mailto:h_aghayan@yahoo.com?subject=Let's%20talk&body=The%20body%20of%20the%20email">
+              <span><a href="mailto:test@yahoo.com?subject=Let's%20talk&body=The%20body%20of%20the%20email">
                   simply_home@interior.org
               </a></span> 
             </div>

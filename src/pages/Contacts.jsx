@@ -5,6 +5,28 @@ import ContactInfo from './ContactInfo'
 
 
 const Contacts = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    text:""
+  })
+
+  const addDataHandler = (e) => {
+    const {name,value} = e.target
+    setData({ ...data, [name]: value })
+  
+  }
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setData({
+    name: "",
+    email: "",
+    phone: "",
+    text:""
+  })
+      console.log(data)
+  }
   return (
     <section className='contact-container'>
       <div className='container'>
@@ -13,7 +35,7 @@ const Contacts = () => {
       <div className="form-container">
         <h4> Book a complimentary phone consultation with us to discuss your next project.
         </h4>
-          <form >
+          <form onSubmit={submitHandler}>
             <div className='inputs-container'>
           <div className='gridContainer'>
                 
@@ -22,9 +44,11 @@ const Contacts = () => {
               <input
                   type='text'
                   id='name'
-                  name='name'
-                  autoComplete='off'
-                  placeholder='Your name'
+                    name='name'
+                    value={data.name}
+                    autoComplete='off'
+                    placeholder='Your name'
+                    onChange={addDataHandler}
                 />
             </div>
             <div className='form-control'>
@@ -33,8 +57,10 @@ const Contacts = () => {
                   type='email'
                   id='email'
                   name='email'
+                  value={data.email}
                   autoComplete='off'
-                placeholder='Your email'
+                  placeholder='Your email'
+                  onChange={addDataHandler}
                 />
             </div>
             <div className='form-control'>
@@ -43,8 +69,10 @@ const Contacts = () => {
                   type='text'
                   id='phone'
                   name='phone'
+                  value={data.phone}
                   autoComplete='off'
-                placeholder='Your phone'
+                  placeholder='Your phone'
+                  onChange={addDataHandler}
                 />
             </div>
           </div>
@@ -52,9 +80,11 @@ const Contacts = () => {
               <label htmlFor='text'>Your message: </label>
                 <textarea
                   id='text'
-                name='text'
-                rows="4" cols="50"
-                placeholder='Your message'
+                  name='text'
+                  value={data.text}
+                 rows="4" cols="50"
+                  placeholder='Your message'
+                  onChange={addDataHandler}
                 />
             </div>
           <button type='submit' className='btn'>submit</button>
