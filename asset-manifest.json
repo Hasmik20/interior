@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/interior/static/css/main.8980649d.css",
-    "main.js": "/interior/static/js/main.180c900a.js",
+    "main.css": "/interior/static/css/main.c6e9d84c.css",
+    "main.js": "/interior/static/js/main.b97fb008.js",
     "static/js/787.28cb0dcd.chunk.js": "/interior/static/js/787.28cb0dcd.chunk.js",
     "static/media/homeImg.jpg": "/interior/static/media/homeImg.ff38bdf2453921041fea.jpg",
     "static/media/kitchen.jpg": "/interior/static/media/kitchen.da50dc40819596ebb6e0.jpg",
+    "static/media/textile.jpg": "/interior/static/media/textile.95d8c9c2c05c069b5d39.jpg",
+    "static/media/bedRoom.jpg": "/interior/static/media/bedRoom.7815a2e7fbccffdf534e.jpg",
+    "static/media/reading.jpg": "/interior/static/media/reading.1fc21a8be5be2c408fb7.jpg",
+    "static/media/diningRoom.jpg": "/interior/static/media/diningRoom.e08c53fdabd85f200471.jpg",
     "static/media/logo.jpg": "/interior/static/media/logo.7f39c84c815f385c264d.jpg",
     "index.html": "/interior/index.html",
-    "main.8980649d.css.map": "/interior/static/css/main.8980649d.css.map",
-    "main.180c900a.js.map": "/interior/static/js/main.180c900a.js.map",
+    "main.c6e9d84c.css.map": "/interior/static/css/main.c6e9d84c.css.map",
+    "main.b97fb008.js.map": "/interior/static/js/main.b97fb008.js.map",
     "787.28cb0dcd.chunk.js.map": "/interior/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8980649d.css",
-    "static/js/main.180c900a.js"
+    "static/css/main.c6e9d84c.css",
+    "static/js/main.b97fb008.js"
   ]
 }
