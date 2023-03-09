@@ -17,16 +17,16 @@ export const navLinks = [
     text: 'services',
   },
  
-  {
-    id: 4,
-    url: '/projects',
-    text: 'projects',
-  },
-  {
-    id: 5,
-    url: '/shop',
-    text: 'shop',
-  },
+  // {
+  //   id: 4,
+  //   url: '/projects',
+  //   text: 'projects',
+  // },
+  // {
+  //   id: 5,
+  //   url: '/shop',
+  //   text: 'shop',
+  // },
   {
     id: 6,
     url: '/contact',

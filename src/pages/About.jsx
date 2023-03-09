@@ -3,7 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-import kitchen from '../util/img/kitchen.jpg'
+import reading from '../util/img/reading.jpg'
+import diningRoom from '../util/img/diningRoom.jpg'
 
 const About = () => {
     useEffect(() => {
@@ -24,24 +25,24 @@ const About = () => {
   
        <div data-aos='fade-up' className="about-hero">
           <div >
-             <h4> INTERIOR DESIGN AMSTERDAM</h4>
+             <h4> INTERIOR DESIGN </h4>
             <p>Our impressive array of award winning projects is testament to our creative team’s attention to detail and meticulous care. 
           </p>
           <p>
             We lead all  projects from a planning and creative perspective all the way through to completion and handover, supported by our team to assist with detailing, drawings, cost  and project management.
           </p>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
         </div>
-            <img src={kitchen} alt="kitchen img" />
+            <img src={diningRoom} alt="kitchen img" />
       </div>
       <div data-aos='fade-up' className="about-hero imgOrder">
-         <img src={kitchen} alt="kitchen img" className='one' />
+         <img src={reading} alt="reading img" className='one' />
           <div className='two'>
-             <h4> INTERIOR DESIGN AMSTERDAM</h4>
-            <p>Our impressive array of award winning projects is testament to our creative team’s attention to detail and meticulous care. 
-          </p>
-          <p>
-              We lead all  projects from a planning and creative perspective all the way through to completion and handover, supported by our team to assist with detailing, drawings, cost  and project management.
-          </p>
+             {/* <h4> INTERIOR DESIGN AMSTERDAM</h4> */}
+             <p>Having a cozy reading nook is vital for every house: it provides a space to relax and escape from things. It doesn’t require a large space, but it is crucial to have good lighting and a comfortable and appealing seating. The area next to a window is a perfect spot, which will provide not only plenty of natural light but also a beautiful view. Matching footrest will enhance the experience of relaxation and comfort. The bookshelves are a great way to not only showcase the library, but also the owner’s personality and values. Tastefully arranged bookshelf will certainly add to the experience and make the nook the most liked space in the house.</p>
+            
         </div>
            
       </div>

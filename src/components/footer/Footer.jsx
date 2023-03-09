@@ -22,7 +22,7 @@ const Footer = () => {
             <div className='info'>
               <Link to="/contact" > Contact Us </Link>
               <Link to="/about" > About </Link>
-              <Link to="/projects" > Projects </Link>
+              <Link to="/services" > Services </Link>
             </div>
           </div>
           <div className='info-container'>
