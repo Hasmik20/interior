@@ -109,3 +109,26 @@
  }
 }
 
+.error-container{
+  height: calc(100vh - 432px);
+.link-container{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    color:rgb(35, 35, 216);
+    border: 1px solid rgba(35, 35, 216,0.2);
+    border-radius: 10px;
+    &:hover{
+       color:rgba(35, 35, 216,0.2);
+    border: 1px solid rgba(35, 35, 216,0.2);
+    }
+  p{
+     cursor: pointer;
+     margin-left: 10px;
+    }
+  }
+}
